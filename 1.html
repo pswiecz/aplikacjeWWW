@@ -1,0 +1,85 @@
+<form>
+  <div>
+    <label for="full-name">Full name:</label>
+    <input type="text" id="full-name" name="fullName" value="John" minlength="2" maxlength="50" required autofocus>
+  </div>
+  <div>
+    <label for="email-address">Email address:</label>
+    <input type="email" id="email-address" name="emailAddress" placeholder="e.g. kowalski@example.com" required disabled>
+  </div>
+  <div>
+    <label for="phone-number">Phone number:</label>
+    <input type="tel" id="phone-number" name="phoneNumber" placeholder="+48 123 456 789" required >
+  </div>
+  <div>
+    <input type="checkbox" id="create-account" name="createAccount" checked disabled>
+    <label for="create-account">Create an account</label>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Min. 8 characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+  </div>
+  <div>
+    <label for="product-type">Product type:</label>
+    <select id="product-type" name="productType" size="1">
+      <option value="" disabled selected>- choose -</option>
+      <optgroup label="Electronics">
+        <option value="phone">Phone</option>
+        <option value="laptop">Laptop</option>
+      </optgroup>
+      <optgroup label="Fashion">
+        <option value="clothing">Clothing</option>
+        <option value="footwear">Footwear</option>
+      </optgroup>
+    </select>
+  </div>
+  <div>
+    <label for="price">Price:</label>
+    <input type="range" id="price" name="price" min="0" max="1000" value="500" oninput="this.nextElementSibling.value = this.value">
+    <output>500</output>
+  </div>
+  <div>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" cols="30" placeholder="Short product description..."></textarea>
+  </div>
+  <div>
+    <label for="maker">Maker:</label>
+    <input type="text" id="maker" name="maker" list="makers-list" placeholder="e.g. Apple">
+    <datalist id="makers-list">
+      <option value="Apple">
+      <option value="Samsung">
+    </datalist>
+  </div>
+  <div>
+    <label>Warranty period:</label>
+    <div>
+      <input type="radio" id="warranty-12" name="warrantyPeriod" value="12" checked>
+      <label for="warranty-12">12 months</label>
+    </div>
+    <div>
+      <input type="radio" id="warranty-24" name="warrantyPeriod" value="24" checked>
+      <label for="warranty-24">24 months</label>
+    </div>
+  </div>
+  <div>
+    <label for="product-photo">Product photo:</label>
+    <input type="file" id="product-photo" name="productPhoto">
+  </div>
+  <div>
+    <label for="purchased-date">Purchased date:</label>
+    <input type="date" id="purchased-date" name="purchasedDate" max="2025-10-15" value="2025-10-15">
+  </div>
+  <div>
+    <label for="tags">Tags:</label>
+    <select id="tags" name="tags" multiple size="3">
+      <option value="new">New</option>
+      <option value="used">Used</option>
+      <option value="popular">Popular</option>
+    </select>
+  </div>
+  <div>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+    <button type="submit" name="action" value="save-draft">Save draft</button>
+  </div>
+</form>
