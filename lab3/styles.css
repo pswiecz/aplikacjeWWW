@@ -1,0 +1,97 @@
+.container {
+  width: 60vw;
+  margin-inline: auto;
+  overflow-wrap: break-word;
+  border: 2px solid  black;
+  padding: 20px;
+  margin-block: 20px;
+}
+.container.page-header {
+  background: url("zdj.png") no-repeat center center;
+  background-size: 100% 100%;
+  color: black;
+}
+.page-header h1 {
+  text-align: center;
+}
+.page-header p {
+  text-align: left;
+}
+.page-main {
+  line-height: 1.5;
+}
+h1, h2, h3 {
+  margin-block: 1em 0.5em;
+}
+section {
+  margin-block: 1.5em;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.page-nav {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border-bottom: 2px solid black;
+}
+.page-nav > .menu {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 3px outset gray;
+  white-space: nowrap;
+}
+.page-nav > .menu > .menu__submenu {
+  display: none;
+}
+.menu:hover .menu__submenu {
+  display: inline-block;   
+}
+a {
+  color: black;
+}
+main a:visited {
+  color: gray;
+}
+.page-nav a:hover {
+  color: orange;
+  text-decoration: none;
+}
+main a:hover {
+  color: crimson;
+  text-decoration: underline;
+}
+.article-introduction__link {
+  font-weight: bold;
+}
+.article-introduction__link::before {
+  content: "\1F449\00a0";   
+}
+.resources-web li::marker {
+  content: "\1F310\00a0";
+}
+.resource-link::after {
+  content: "\2197";
+  vertical-align: super;
+  font-size: 0.7em;
+}
+.go-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: white;
+}
+
+
+
+
+
+
+
+
+
